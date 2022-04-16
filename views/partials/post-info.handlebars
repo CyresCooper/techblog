@@ -1,0 +1,15 @@
+<!-- displays all the information associated with a created post -->
+<article class="post">
+  <div class="title">
+    <h3>{{title}}</h3>
+    <span>({{game_name}})</span>
+    <p>{{description}}</p>
+  </div>
+  <div class="meta">
+    {{helpful_count}} {{format_plural "helpful" helpful_count}}
+    |
+    {{unhelpful_count}} {{format_plural "unhelpful" unhelpful_count}}
+    |
+    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+  </div>
+</article>

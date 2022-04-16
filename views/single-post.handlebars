@@ -1,0 +1,23 @@
+{{#if loggedIn}}
+<!-- Allows commenting and marking posts as helpful or unhelpful when logged in -->
+<form class="comment-form">
+  <h3>Add Comment Here!</h3>
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">add comment</button>
+    <button type="button" class="helpful-btn">Helpful!</button>
+    <button type="button" class="unhelpful-btn">Unhelpful!</button>
+  </div>
+</form>
+{{/if}}
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+<script src="/javascript/helpful.js"></script>
+<script src="/javascript/unhelpful.js"></script>
+{{/if}}
