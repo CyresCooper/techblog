@@ -25,5 +25,5 @@ Once the application is connected to the server, the user will be able to get, c
 
 ## Links
 
-Deployed application:https://cyrescooper.github.io/techblog/
+Deployed application:https://protected-dawn-43308.herokuapp.com/
 
